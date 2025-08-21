@@ -40,6 +40,10 @@ function validateItem(body, isCreate = true) {
 }
 
 app.get("/api/items", (req, res) => {
+  res.send("hello");
+});
+
+app.get("/api/items", (req, res) => {
   const db = readDB();
   res.json(db.items);
 });
