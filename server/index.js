@@ -39,7 +39,7 @@ function validateItem(body, isCreate = true) {
   return errors;
 }
 
-app.get("/api/items", (req, res) => {
+app.get("/", (req, res) => {
   res.send({ active: true, message: "API is running" });
 });
 
