@@ -40,7 +40,7 @@ function validateItem(body, isCreate = true) {
 }
 
 app.get("/api/items", (req, res) => {
-  res.send("hello");
+  res.send({ active: true, message: "API is running" });
 });
 
 app.get("/api/items", (req, res) => {
