@@ -46,6 +46,7 @@ app.get("/", (req, res) => {
 app.get("/api/items", (req, res) => {
   const db = readDB();
   res.json(db.items);
+  res.send({ active: true, message: "API is running" });
 });
 
 app.post("/api/items", (req, res) => {
